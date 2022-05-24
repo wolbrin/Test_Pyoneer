@@ -1,0 +1,7 @@
+1.SELECT MAX (gt.Score)
+               FROM Game_tbl gt
+              group by PlayerId.gt;
+2.Select PlayerName.pt from Playrs_tbl pt,Game_tbl gt
+    where PlayerId.pt=PlayerId.gt and PlayerId.pt not in PlayerId.gt;
+3.SELECT PlayerName.pt from Playrs_tbl pt,Game_tbl gt
+               where sum (gt.Score)  group by PlayerId.gt >100;
